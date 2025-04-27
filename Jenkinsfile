@@ -12,12 +12,10 @@ pipeline {
                 )
             }
         }
-        stage(name: 'Unit Test maven'){
+        stage('Unit Test Maven') {
             steps {
                 mvnTest()
-
             }
         }
-          
     }
 }
