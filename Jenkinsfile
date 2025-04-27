@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {
-                git(
+                gitCheckout(
                     branch: 'main',
                     url: 'https://github.com/AshokSelf/java-project.git'
                 )
